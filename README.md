@@ -48,15 +48,12 @@ A comprehensive CI/CD configuration management tool for enterprise deployments.
 export DEPLOY_ENV=production
 ./scripts/deploy.sh
 
-text
 
 ### Development Mode
 export NODE_ENV=development
 npm install
 npm run dev
-
 Access dashboard at http://localhost:3000
-text
 
 ### Experimental / AI-Enhanced Mode
 Install AI dependencies
@@ -68,19 +65,16 @@ Initialize AI models
 Start with AI-enhanced mode
 npm run start:ai
 
-text
 
 ## Development Setup
 Install dependencies
 npm install
-
-Run tests
+run tests
 npm test
 
 Start development server
 npm run dev
 
-text
 
 ## AI Integration (Experimental)
 - Predict optimal deployment times
