@@ -22,23 +22,23 @@ Cloned instructor's repository with pre-built conflicts, created my own solution
 | Command         | Times Used | Purpose                                        |
 |-----------------|:----------:|-----------------------------------------------|
 | git clone       |     1      | Cloned instructor’s base repository           |
-| git checkout    |    20+     | Switched between branches during merges/tests |
+| git checkout    |    10+     | Switched between branches during merges/tests |
 | git branch      |    10+     | Viewed, created, and managed branches         |
 | git merge       |     2      | Merged dev and conflict-simulator into main   |
-| git add         |    30+     | Staged resolved conflicts and new files       |
+| git add         |    20+     | Staged resolved conflicts and new files       |
 | git commit      |    15+     | Saved progress, completed merges              |
 | git push        |    12+     | Pushed changes to my repository               |
 | git fetch       |     2      | Fetched updates from instructor               |
-| git pull        |     1      | Pulled changes from instructor                |
+| git pull        |     3+     | Pulled changes from instructor                |
 | git stash       |     2      | Saved work-in-progress during branch switches |
-| git cherry-pick |     1      | Transferred specific commits to main branch   |
+| git cherry-pick |     3+     | Transferred specific commits to main branch   |
 | git rebase      |     1      | Rebased feature branches for clean history    |
 | git reset       |     3      | Undid/tested various commit reverts/reset     |
 | git revert      |     1      | Safely undid one pushed commit                |
 | git tag         |     2      | Marked release milestones and merge completions|
-| git status      |    50+     | Verified everything before and during merges  |
-| git log         |    30+     | Viewed history and commit graph               |
-| git diff        |    20+     | Compared changes between branches            |
+| git status      |    20+     | Verified everything before and during merges  |
+| git log         |    10+     | Viewed history and commit graph               |
+| git diff        |    5+      | Compared changes between branches            |
 
 ---
 
