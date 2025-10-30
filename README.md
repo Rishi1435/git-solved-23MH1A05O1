@@ -45,16 +45,17 @@ A comprehensive CI/CD configuration management tool for enterprise deployments.
 ## Quick Start
 
 ### Production Mode
+```bash
 export DEPLOY_ENV=production
 ./scripts/deploy.sh
-
+```
 
 ### Development Mode
-export NODE_ENV=development
+```bash
+export DEPLOY_ENV=development
 npm install
 npm run dev
-Access dashboard at http://localhost:3000
-
+```
 ### Experimental / AI-Enhanced Mode
 Install AI dependencies
 pip install tensorflow keras

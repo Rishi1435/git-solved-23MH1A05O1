@@ -45,19 +45,94 @@ Cloned instructor's repository with pre-built conflicts, created my own solution
 ## Conflicts Resolved
 
 ### Merge 1: main + dev (Oct 27, 2025)
-- Resolved six major file conflicts:
-    - config/app-config.yaml
-    - config/database-config.json
-    - scripts/deploy.sh
-    - scripts/monitor.js
-    - docs/architecture.md
-    - README.md
-- Decisions: Combined production stability with new development features; resolved configuration, script, and documentation merges by keeping safe defaults and marking experimental content.
 
-### Merge 2: main + conflict-simulator (Oct 27, 2025)
-- Integrated experimental features, separating advanced logic and documenting decisions for maintainability.
-- Used feature flags and separate config sections for AI and multi-cloud functionality.
-- Verified that all conflict markers (`<<<<<<<`, `=======`, `>>>>>>>`) were removed before commit.
+**1. config/app-config.yaml**  
+- Issue: Production used port 8080, development used 3000  
+- Resolution: Created unified config with environment-based settings  
+- Strategy: Keep production as default, add development as optional  
+- Difficulty: Medium  
+- Time: 15 minutes  
+
+**2. config/database-config.json**  
+- Issue: Different database hosts and SSL settings  
+- Resolution: Combined into one JSON with separate production and development profiles  
+- Strategy: Support both environments dynamically  
+- Difficulty: Medium  
+- Time: 10 minutes  
+
+**3. scripts/deploy.sh**  
+- Issue: Different deployment strategies (production vs docker-compose)  
+- Resolution: Added conditional logic using DEPLOY_ENV variable  
+- Strategy: Unified both environments into one dynamic script  
+- Difficulty: Hard  
+- Time: 20 minutes  
+
+**4. scripts/monitor.js**  
+- Issue: Different monitoring intervals and log formats  
+- Resolution: Added environment-based config object using process.env.NODE_ENV  
+- Strategy: Unified and cleaned unnecessary logs  
+- Difficulty: Medium  
+- Time: 15 minutes  
+
+**5. docs/architecture.md**  
+- Issue: Different architectural documentation  
+- Resolution: Merged both into a comprehensive structure with sections for production and development  
+- Strategy: Combined both perspectives clearly  
+- Difficulty: Easy  
+- Time: 10 minutes  
+
+**6. README.md**  
+- Issue: Conflicting project descriptions and versioning  
+- Resolution: Combined all features with clear environment sections  
+- Strategy: Organized Production, Development, and Experimental separately  
+- Difficulty: Easy  
+- Time: 10 minutes  
+
+---
+
+### Merge 2: main + conflict-simulator (Oct 28, 2025)
+
+**1. config/app-config.yaml**  
+- Issue: Added new AI-related environment section  
+- Resolution: Merged existing structure with new ai-testing environment  
+- Strategy: Ensure backward compatibility  
+- Difficulty: Medium  
+- Time: 10 minutes  
+
+**2. config/database-config.json**  
+- Issue: Conflict between standard and experimental DB settings  
+- Resolution: Added separate key for "ai_mode": true when testing  
+- Strategy: Maintain structured profiles for all environments  
+- Difficulty: Medium  
+- Time: 10 minutes  
+
+**3. scripts/deploy.sh**  
+- Issue: Conflict between standard deployment and AI-enhanced setup  
+- Resolution: Introduced flag --ai for experimental builds  
+- Strategy: Extended the unified script from previous merge  
+- Difficulty: Hard  
+- Time: 20 minutes  
+
+**4. scripts/monitor.js**  
+- Issue: Additional AI-monitoring logic from simulator branch  
+- Resolution: Integrated AI-based performance metrics under condition check  
+- Strategy: Keep environment and AI logic modular  
+- Difficulty: Medium  
+- Time: 15 minutes  
+
+**5. docs/architecture.md**  
+- Issue: Simulator branch added AI workflow section  
+- Resolution: Appended as a separate subsection under Future Enhancements  
+- Strategy: Preserve chronological documentation clarity  
+- Difficulty: Easy  
+- Time: 10 minutes  
+
+**6. README.md**  
+- Issue: Overlapping sections from experimental build  
+- Resolution: Merged AI features under a new Experimental Mode heading  
+- Strategy: Keep readability and feature categorization  
+- Difficulty: Easy  
+- Time: 10 minutes  
 
 ---
 
